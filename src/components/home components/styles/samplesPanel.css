@@ -1,0 +1,13 @@
+.vid-comp {
+  height: auto;
+  width: 20rem;
+  border-radius: 0.5rem;
+}
+.samples {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem;
+  margin-top: 15rem;
+}

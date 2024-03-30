@@ -1,0 +1,40 @@
+.aboutMe {
+  height: 15rem;
+  padding: 1rem;
+  margin-top: 25rem;
+  border-radius: 0.7rem;
+  opacity: 0;
+  transition: ease-in-out 800ms;
+  color: white;
+  background-color: rgba(90, 0, 155, 0.826);
+}
+.aboutVid {
+  height: auto;
+  width: 19rem;
+}
+.panel {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  color: rgb(24, 24, 24);
+  background-color: rgb(188, 160, 201);
+  opacity: 0;
+  transition: ease-in-out 800ms;
+  transition-delay: 1000ms;
+  transform: translate(10%, 0);
+  height: 35rem;
+  width: 20rem;
+  border-radius: 0.5rem;
+  position: absolute;
+  top: 30rem;
+  right: 3.5rem;
+}
+.panel-text {
+  font-size: 3ch;
+  font-weight: bolder;
+}
+.show {
+  opacity: 1;
+  transform: translate(0, 0);
+}

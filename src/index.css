@@ -1,0 +1,10 @@
+body {
+  padding: 0.5rem;
+  margin: 0;
+  font-family: system-ui, -apple-system;
+  background: linear-gradient(135deg, rgb(247, 187, 77), rgb(155, 0, 155));
+}
+a {
+  text-decoration: none;
+  color: rgb(255, 214, 137);
+}

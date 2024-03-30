@@ -1,0 +1,33 @@
+.icon-nav {
+  display: flex;
+  justify-content: space-between;
+  padding-inline: 3rem;
+  margin-block: 1rem;
+  background: linear-gradient(
+    120deg,
+    rgba(255, 255, 255, 0.415),
+    rgba(34, 34, 34, 0.415)
+  );
+  border-radius: 1rem;
+}
+.clickable {
+  cursor: pointer;
+  transition: ease-in-out 300ms;
+  transition-delay: 100ms;
+  position: relative;
+}
+.clickable:hover {
+  margin: 0 2rem 0 2rem;
+}
+.clickable::after {
+  content: "";
+}
+.clickable:hover::after {
+  content: "";
+  width: 3rem;
+  height: 0.1rem;
+  box-shadow: 0 1rem 0.8rem 0.2rem rgb(255, 255, 255);
+  position: absolute;
+  bottom: 1.5rem;
+  left: 1.5rem;
+}

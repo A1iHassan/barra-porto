@@ -1,0 +1,38 @@
+.workContainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+.work {
+  margin-top: 13rem;
+  padding: 1rem;
+}
+.work-left {
+  width: 45vw;
+  height: 30vh;
+  margin-top: 15rem;
+  background-color: pink;
+  border-radius: 0.5rem;
+  opacity: 0;
+  transform: translate3d(-10%, 0, 0);
+  transition: ease-in-out 1000ms;
+}
+.work-right {
+  width: 30vw;
+  height: 40vh;
+  background-color: rgba(90, 0, 155, 0.826);
+  color: white;
+  border-radius: 1.5rem;
+  opacity: 0;
+  transform: translate3d(10%, 0, 0);
+  transition: ease-in-out 1000ms;
+  transition-delay: 200ms;
+}
+.show {
+  opacity: 1;
+  transform: translate3d(0, 0, 0);
+}
+.show-light {
+  opacity: 0.6;
+  transform: translate3d(0, 0, 0);
+}

@@ -1,0 +1,41 @@
+.skillsContainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+.skills {
+  margin-top: 15rem;
+  padding: 1rem;
+}
+.skills-left {
+  width: 25vw;
+  height: 40vh;
+  background-color: rgba(90, 0, 155, 0.826);
+  color: white;
+  opacity: 0;
+  border-radius: 1.5rem;
+  transform: translate3d(-10%, 0, 0);
+  transition: ease-in-out 1000ms;
+}
+.skills-right {
+  width: 35vw;
+  height: 30vh;
+  background-color: pink;
+  opacity: 0;
+  transform: translate3d(10%, 0, 0);
+  border-radius: 0.5rem;
+  transition: ease-in-out 1000ms;
+  transition-delay: 200ms;
+}
+.show {
+  opacity: 1;
+  transform: translate3d(0, 0, 0);
+}
+.show-light {
+  opacity: 0.6;
+  transform: translate3d(0, 0, 0);
+}
+.icon-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+}

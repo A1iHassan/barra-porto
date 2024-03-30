@@ -1,0 +1,31 @@
+.container-2020 {
+  background-color: rgba(90, 0, 155, 0.826);
+  color: white;
+  padding: 1rem;
+  border-radius: 1rem;
+  width: auto;
+  height: 10rem;
+  margin-top: 15rem;
+  opacity: 0;
+  transform: translate(-10%, 0);
+  transition: ease-in-out 800ms;
+}
+.show {
+  opacity: 1;
+  transform: translate(0, 0);
+}
+
+.h2020::before {
+  content: "";
+  display: inline-block;
+  width: 5rem;
+  height: 0.2rem;
+  margin-right: 0.3rem;
+  position: absolute;
+  top: 3.4rem;
+  background: linear-gradient(
+    to right,
+    rgb(247, 187, 77),
+    rgb(90, 0, 155, 0.826)
+  );
+}

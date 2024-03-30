@@ -1,0 +1,54 @@
+.clients {
+  margin-top: 20rem;
+  margin-bottom: 15rem;
+  opacity: 0;
+  transform: scaleX(0.99);
+  transition: ease-in-out 800ms;
+}
+
+.clientsDiv {
+  width: auto;
+  height: auto;
+  background-color: rgba(90, 0, 155, 0.826);
+  border-radius: 1.5rem;
+  color: white;
+  padding: 1rem;
+}
+.show {
+  opacity: 1;
+  transform: scale(1);
+}
+.clientsDiv > span {
+  font-size: 3ch;
+  margin-left: 2rem;
+  font-weight: bolder;
+}
+.clientsDiv > ul {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+  list-style-type: circle;
+  margin-block: 3rem;
+}
+
+.clientsDiv > a {
+  display: block;
+  margin: 1rem 1rem 1rem 2rem;
+}
+.clientsDiv > ul > li {
+  position: relative;
+  font-weight: lighter;
+}
+.clientsDiv > ul > li::after {
+  content: "";
+  width: 100%;
+  height: 0.1rem;
+  position: absolute;
+  background: linear-gradient(
+    to right,
+    rgb(247, 187, 77),
+    rgb(90, 0, 155, 0.826)
+  );
+  bottom: -0.4rem;
+  left: -1rem;
+}
